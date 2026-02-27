@@ -3,33 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio profissional de Matheus Rodrigues com foco em desenvolvimento, dados e tecnologia." />
+  <meta name="description" content="Portfólio de Matheus Rodrigues com foco em desenvolvimento front-end, dados e dashboards Power BI." />
   <title>Matheus Rodrigues | Portfólio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="background-effects" aria-hidden="true">
-    <span class="glow glow--one"></span>
-    <span class="glow glow--two"></span>
+  <div class="background" aria-hidden="true">
+    <span class="blob blob--a"></span>
+    <span class="blob blob--b"></span>
+    <span class="grid"></span>
   </div>
 
-  <main class="container">
-    <header class="hero reveal">
-      <p class="eyebrow">Portfólio Profissional</p>
-      <h1>Matheus Rodrigues</h1>
-      <p class="subtitle">Tecnologia • Dados • Desenvolvimento</p>
-      <p class="hero-description">
-        Estudante de Ciência da Computação focado em construir soluções elegantes com front-end moderno, análise de dados e automação com Python.
-      </p>
-
-      <div class="buttons" role="group" aria-label="Redes sociais">
-        <a href="https://github.com/MatheusSZR" target="_blank" rel="noreferrer" class="btn btn--ghost">GitHub</a>
-        <a href="https://www.linkedin.com/in/matheus-rodrigues-601930231/" target="_blank" rel="noreferrer" class="btn btn--primary">LinkedIn</a>
+  <main class="page">
+    <section class="hero card reveal" aria-labelledby="main-title">
+      <div class="hero__photo">
+        <!-- Substitua a imagem abaixo pela sua foto profissional -->
+        <img src="assets/profile-placeholder.svg" alt="Foto profissional de Matheus Rodrigues" />
       </div>
-    </header>
+
+      <div class="hero__content">
+        <p class="kicker">Portfólio Profissional</p>
+        <h1 id="main-title">Matheus Rodrigues</h1>
+        <p class="hero__subtitle">Front-end • Dados • Visualização Analítica</p>
+        <p class="hero__text">
+          Estudante de Ciência da Computação, com foco em construção de interfaces modernas, análise orientada por dados e desenvolvimento de dashboards estratégicos em Power BI.
+        </p>
+
+        <div class="hero__actions" role="group" aria-label="Redes profissionais">
+          <a href="https://github.com/MatheusSZR" target="_blank" rel="noreferrer" class="btn btn--neutral">GitHub</a>
+          <a href="https://www.linkedin.com/in/matheus-rodrigues-601930231/" target="_blank" rel="noreferrer" class="btn btn--brand">LinkedIn</a>
+        </div>
+      </div>
+    </section>
 
     <section class="card reveal" id="sobre">
       <h2>Sobre mim</h2>
@@ -42,28 +50,69 @@
 
     <section class="card reveal" id="projetos" aria-labelledby="titulo-projetos">
       <h2 id="titulo-projetos">Projetos em Destaque</h2>
-      <p class="section-description">Acesse alguns projetos publicados no GitHub Pages:</p>
-      <div class="project-actions">
+      <p class="section-text">Acesse meus projetos publicados:</p>
+      <div class="project-buttons">
         <a class="btn btn--project" href="https://matheusszr.github.io/SerralheriaFrontEnd/index.html" target="_blank" rel="noreferrer">Projeto Serralheria</a>
         <a class="btn btn--project" href="https://matheusszr.github.io/InspiraAgora/" target="_blank" rel="noreferrer">Projeto InspiraAgora</a>
       </div>
     </section>
 
-    <section class="skills reveal" aria-labelledby="titulo-skills">
+    <section class="card reveal" id="dashboards" aria-labelledby="titulo-dashboards">
+      <h2 id="titulo-dashboards">Galeria de Dashboards (Power BI)</h2>
+      <p class="section-text">Espaços prontos para você adicionar screenshots dos seus painéis.</p>
+
+      <div class="dashboard-grid">
+        <article class="dashboard-slot">
+          <div class="dashboard-slot__media">
+            <!-- Troque o caminho abaixo pela imagem do seu painel -->
+            <img src="assets/dashboard-01.svg" alt="Painel Power BI 1" loading="lazy" />
+            <span class="badge">Painel 01</span>
+          </div>
+          <div class="dashboard-slot__body">
+            <h3>Dashboard Comercial</h3>
+            <p>Exemplo de espaço para métricas de vendas, ticket médio e metas.</p>
+          </div>
+        </article>
+
+        <article class="dashboard-slot">
+          <div class="dashboard-slot__media">
+            <img src="assets/dashboard-02.svg" alt="Painel Power BI 2" loading="lazy" />
+            <span class="badge">Painel 02</span>
+          </div>
+          <div class="dashboard-slot__body">
+            <h3>Dashboard Financeiro</h3>
+            <p>Área para análise de custos, margem, fluxo de caixa e tendências.</p>
+          </div>
+        </article>
+
+        <article class="dashboard-slot">
+          <div class="dashboard-slot__media">
+            <img src="assets/dashboard-03.svg" alt="Painel Power BI 3" loading="lazy" />
+            <span class="badge">Painel 03</span>
+          </div>
+          <div class="dashboard-slot__body">
+            <h3>Dashboard Operacional</h3>
+            <p>Espaço para indicadores de produtividade e performance por equipe.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card reveal" aria-labelledby="titulo-skills">
       <h2 id="titulo-skills">Stack Técnica</h2>
-      <div class="tags">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">Python</span>
-        <span class="tag">Power BI</span>
-        <span class="tag">SQL</span>
-        <span class="tag">GitHub</span>
+      <div class="skills-list">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Python</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">SQL</span>
+        <span class="skill">GitHub</span>
       </div>
     </section>
 
     <footer>
-      <p>© 2025 Matheus Rodrigues • Desenvolvido com foco em performance e experiência do usuário.</p>
+      <p>© 2025 Matheus Rodrigues • Portfólio com foco em design, performance e clareza visual.</p>
     </footer>
   </main>
 
