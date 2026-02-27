@@ -1,49 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matheus Rodrigues - Portfólio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio profissional de Matheus Rodrigues com foco em desenvolvimento, dados e tecnologia." />
+  <title>Matheus Rodrigues | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header>
-        <h1>Matheus Rodrigues</h1>
-        <p class="subtitle">Tecnologia • Dados • Desenvolvimento</p>
+  <div class="background-effects" aria-hidden="true">
+    <span class="glow glow--one"></span>
+    <span class="glow glow--two"></span>
+  </div>
 
-        <div class="buttons">
-            <a href="https://github.com/MatheusSZR" target="_blank" class="btn github">GitHub</a>
-            <a href="https://www.linkedin.com/in/matheus-rodrigues-601930231/" 
-               target="_blank" class="btn linkedin">LinkedIn</a>
-        </div>
+  <main class="container">
+    <header class="hero reveal">
+      <p class="eyebrow">Portfólio Profissional</p>
+      <h1>Matheus Rodrigues</h1>
+      <p class="subtitle">Tecnologia • Dados • Desenvolvimento</p>
+      <p class="hero-description">
+        Estudante de Ciência da Computação focado em construir soluções elegantes com front-end moderno, análise de dados e automação com Python.
+      </p>
+
+      <div class="buttons" role="group" aria-label="Redes sociais">
+        <a href="https://github.com/MatheusSZR" target="_blank" rel="noreferrer" class="btn btn--ghost">GitHub</a>
+        <a href="https://www.linkedin.com/in/matheus-rodrigues-601930231/" target="_blank" rel="noreferrer" class="btn btn--primary">LinkedIn</a>
+      </div>
     </header>
 
-    <section class="sobre">
-        <h2>Sobre mim</h2>
-        <p>
-            Sou estudante de Ciências da Computação com interesse em tecnologia, dados e desenvolvimento.
-            Tenho experiência com análise de dados, SQL, Python, Power BI e conceitos de front-end (HTML, CSS e JavaScript).
-            Busco sempre aprender mais, criar projetos úteis e evoluir como profissional.
-        </p>
+    <section class="card reveal" id="sobre">
+      <h2>Sobre mim</h2>
+      <p>
+        Sou estudante de Ciências da Computação com interesse em tecnologia, dados e desenvolvimento.
+        Tenho experiência com análise de dados, SQL, Python, Power BI e conceitos de front-end (HTML, CSS e JavaScript).
+        Busco sempre aprender mais, criar projetos úteis e evoluir como profissional.
+      </p>
     </section>
 
-    <section class="skills">
-        <h2>Habilidades</h2>
-        <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Python</span>
-            <span class="tag">Power BI</span>
-            <span class="tag">SQL</span>
-            <span class="tag">GitHub</span>
-        </div>
+    <section class="card reveal" id="projetos" aria-labelledby="titulo-projetos">
+      <h2 id="titulo-projetos">Projetos em Destaque</h2>
+      <p class="section-description">Acesse alguns projetos publicados no GitHub Pages:</p>
+      <div class="project-actions">
+        <a class="btn btn--project" href="https://matheusszr.github.io/SerralheriaFrontEnd/index.html" target="_blank" rel="noreferrer">Projeto Serralheria</a>
+        <a class="btn btn--project" href="https://matheusszr.github.io/InspiraAgora/" target="_blank" rel="noreferrer">Projeto InspiraAgora</a>
+      </div>
+    </section>
+
+    <section class="skills reveal" aria-labelledby="titulo-skills">
+      <h2 id="titulo-skills">Stack Técnica</h2>
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Python</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">SQL</span>
+        <span class="tag">GitHub</span>
+      </div>
     </section>
 
     <footer>
-        <p>© 2025 Matheus Rodrigues</p>
+      <p>© 2025 Matheus Rodrigues • Desenvolvido com foco em performance e experiência do usuário.</p>
     </footer>
+  </main>
 
+  <script src="script.js"></script>
 </body>
 </html>
