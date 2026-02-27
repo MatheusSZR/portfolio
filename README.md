@@ -1,59 +1,46 @@
 # Portfólio Profissional — Matheus Rodrigues
 
-Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvido para apresentar meu perfil técnico, habilidades e projetos publicados.
+Landing page de portfólio com visual moderno, estrutura escalável e seções focadas em apresentação técnica, projetos publicados e vitrine de dashboards Power BI.
 
-## ✨ Objetivo
+## O que foi implementado
 
-Construir uma landing page moderna, responsiva e com visual profissional para centralizar:
+- Hero centralizado com área dedicada à foto profissional;
+- Seção de projetos com os links exigidos;
+- Galeria com **3 espaços prontos** para imagens de dashboards;
+- Tipografia premium e design system com cores, sombras e componentes reutilizáveis;
+- Animações de entrada suaves com JavaScript puro e `IntersectionObserver`;
+- Layout totalmente responsivo para desktop, tablet e mobile.
 
-- Minha apresentação como desenvolvedor;
-- Principais competências técnicas;
-- Links para redes profissionais;
-- Projetos em destaque hospedados no GitHub Pages.
+## Links dos projetos (mantidos)
 
-## 🧱 Stack utilizada
+- Projeto Serralheria: https://matheusszr.github.io/SerralheriaFrontEnd/index.html
+- Projeto InspiraAgora: https://matheusszr.github.io/InspiraAgora/
 
-- **HTML5** para estrutura semântica;
-- **CSS3** com design system (variáveis, gradientes, glassmorphism e responsividade);
-- **JavaScript (vanilla)** para animações de entrada com `IntersectionObserver`;
-- **Google Fonts** para tipografia profissional (`Inter` e `Plus Jakarta Sans`).
-
-## 📁 Estrutura do projeto
+## Estrutura de arquivos
 
 ```bash
 .
+├── assets/
+│   ├── dashboard-01.svg
+│   ├── dashboard-02.svg
+│   ├── dashboard-03.svg
+│   └── profile-placeholder.svg
 ├── index.html
-├── style.css
 ├── script.js
+├── style.css
 └── README.md
 ```
 
-## 🚀 Projetos destacados no site
+## Como trocar as imagens (rápido)
 
-- **Projeto Serralheria**: https://matheusszr.github.io/SerralheriaFrontEnd/index.html
-- **Projeto InspiraAgora**: https://matheusszr.github.io/InspiraAgora/
+1. Substitua `assets/profile-placeholder.svg` pela sua foto.
+2. Substitua `assets/dashboard-01.svg`, `assets/dashboard-02.svg` e `assets/dashboard-03.svg` pelos prints dos seus painéis.
+3. Mantenha os mesmos nomes de arquivo ou atualize os caminhos no `index.html`.
 
-## ▶️ Como executar localmente
+## Execução local
 
-1. Clone o repositório:
-   ```bash
-   git clone <url-do-repo>
-   ```
-2. Acesse a pasta do projeto:
-   ```bash
-   cd portfolio
-   ```
-3. Abra o `index.html` no navegador.
+```bash
+python3 -m http.server 8000
+```
 
-> Dica: para melhor experiência de desenvolvimento, rode um servidor local (ex.: VS Code Live Server).
-
-## 📌 Próximas evoluções sugeridas
-
-- Sessão com timeline de experiências;
-- Cards de projetos com descrição, stack e preview;
-- Modo claro/escuro com persistência em `localStorage`;
-- Integração com formulário de contato (EmailJS ou backend próprio).
-
----
-
-Desenvolvido por **Matheus Rodrigues**.
+Abra `http://127.0.0.1:8000` no navegador.
